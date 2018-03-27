@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Jupyterhub
+
+[Service]
+WorkingDirectory=/srv/jupyterhub
+ExecStart=/usr/local/bin/jupyterhub
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
